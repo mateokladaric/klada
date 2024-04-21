@@ -7,10 +7,14 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="text-white bg-[#010101] overflow-x-hidden font-[Roboto]">
-        <section class="w-full h-screen box-border place-items-center shadow-[inset_0px_0px_90px_100px_rgb(0,0,0)] px-48 grid grid-cols-1 bg-[url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+        <section class="w-full h-screen box-border bg-no-repeat bg-cover place-items-center shadow-[inset_0px_0px_90px_100px_rgb(0,0,0)] px-48 grid grid-cols-1 bg-[url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
             <div>
-                <h1 class="text-7xl my-6 font-bold text-center drop-shadow-[0_4.2px_4.2px_rgba(0,0,0,0.8)]">Welcome to <span class="text-transparent bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text">Klada.net</span></h1>
-                <p class="text-3xl italic px-6 py-4 text-center drop-shadow-[0_1.2px_3.2px_rgba(0,0,0,0.8)]">Ideas are <span class="text-transparent font-bold bg-cyan-400 bg-clip-text">blueprints</span><br>&nbsp;We are the <span class="text-transparent font-bold bg-purple-400 bg-clip-text">engineers.</span></p>
+                <h1 class="text-7xl my-6 font-bold text-center drop-shadow-[0_4.2px_4.2px_rgba(0,0,0,0.8)]">Welcome to <span
+                        class="text-transparent bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text">Klada.net</span>
+                </h1>
+                <p class="text-3xl italic px-6 py-4 text-center drop-shadow-[0_1.2px_3.2px_rgba(0,0,0,0.8)]">Ideas are <span
+                        class="text-transparent font-bold bg-cyan-400 bg-clip-text">blueprints</span><br>&nbsp;We are the
+                    <span class="text-transparent font-bold bg-purple-400 bg-clip-text">engineers.</span></p>
             </div>
             <svg class="absolute top-[85vh] left-1/2 w-12 h-12" onclick="" cursor="pointer">
                 <path d="M 0 0 L 20 20 L 40 0" stroke="rgba(255,255,255,0.75)" stroke-width="5" fill="none" />
@@ -18,10 +22,34 @@
             </svg>
         </section>
         <section class="w-full h-screen box-border">
-
+            <h1 class="text-4xl mx-[20vw] my-4">Lorem</h1>
+            <p class="mx-[22vw] w-[30vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore recusandae error ipsam, velit, repellat illum ducimus nostrum eum distinctio nemo? Exercitationem eum nostrum iste molestias ea reprehenderit quae incidunt obcaecati deserunt tempora voluptatum quis, aliquid corrupti aut deleniti totam!</p>
+            <h2 class="text-4xl mx-[30vw] my-4">Ipsum</h2>
+            <p class="mx-[32vw] w-[30vw]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati debitis impedit, aliquam itaque enim porro aspernatur provident? Adipisci exercitationem corporis, porro unde ducimus et nam fuga sequi, delectus vero maiores nulla corrupti, praesentium voluptas facilis beatae dolores temporibus odit!</p>
+            <h1 class="text-4xl mx-[20vw] my-4">Lorem</h1>
+            <p class="mx-[22vw] w-[30vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore recusandae error ipsam, velit, repellat illum ducimus nostrum eum distinctio nemo? Exercitationem eum nostrum iste molestias ea reprehenderit quae incidunt obcaecati deserunt tempora voluptatum quis, aliquid corrupti aut deleniti totam!</p>
+            <h2 class="text-4xl mx-[30vw] my-4">Ipsum</h2>
+            <p class="mx-[32vw] w-[30vw]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati debitis impedit, aliquam itaque enim porro aspernatur provident? Adipisci exercitationem corporis, porro unde ducimus et nam fuga sequi, delectus vero maiores nulla corrupti, praesentium voluptas facilis beatae dolores temporibus odit!</p>
         </section>
-        <footer>
-
-        </footer>
+        <script>
+            const animatedElements = document.querySelectorAll('.scroll-animate');
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            function onScroll() {
+                animatedElements.forEach(element => {
+                    if (isInViewport(element)) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            window.addEventListener('scroll', onScroll);
+        </script>
     </body>
 </html>
