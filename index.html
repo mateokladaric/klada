@@ -3,130 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Klada.net</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-        </style>
+        <title>KLADA.NET</title>
+        <link rel="icon" type="image/png" href="small.png">
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
-    <body class="text-white bg-black overflow-x-hidden font-['Comfortaa']">
-        <div class="block absolute w-[25vw] h-[25vw] rounded-full top-1/3 bg-purple-700 filter blur-[22vw] move-around transition-all duration-1000"></div>
-        <div class="block absolute w-[25vw] h-[25vw] rounded-full top-1/3 bg-purple-500 filter blur-[22vw] move-around transition-all duration-1000"></div>
-        <div class="block absolute w-[25vw] h-[25vw] rounded-full top-2/3 left-2/3 bg-cyan-700 filter blur-[22vw] move-around transition-all duration-1000"></div>
-        <div class="block absolute w-[25vw] h-[25vw] rounded-full top-2/3 left-2/3 bg-cyan-500 filter blur-[22vw] move-around transition-all duration-1000"></div>
-        <div class="block absolute w-[25vw] h-[25vw] rounded-full top-1/3 bg-purple-500 filter blur-[22vw] move-around transition-all duration-1000"></div>
-        <header class="px-[15vw] z-10 w-screen flex justify-between items-center h-24 absolute left-1/2 top-0 -translate-x-1/2">
-            <h2 class="text-[4vh]">Klada.net</h2>
+    <body>
+        <header>
             <nav>
-                <ul class="text-[2.6vh] flex divide-x-2">
-                    <li><a class="py-4 px-8" href="#s">Usluge</a></li>
-                    <li><a class="py-4 px-8" href="#c">Kontakt</a></li>
-                    <li><a class="py-4 px-8" href="#a">Info</a></li>
-                </ul>
+                <a href="">Usluge</a>
+                <a href="">Uradci</a>
+                <a href="">Kontakt<a>
+                <a href="">O nama</a>
             </nav>
         </header>
-        <main class="px-[15vw] h-screen flex items-center overflow-hidden">
-            <h1 class="text-[15vh] leading-tight font-bold z-10">Pravimo<br><span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text">Efektivne</span><br>Web-Stranice</h1>
-            <svg class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[6vh] aspect-square animate-bounce z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
-                <path fill-rule="evenodd" d="M9 2a8 8 0 100 16 8 8 0 000-16zM9 5a1 1 0 00-1 1v6.586l-2.293-2.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L10 12.586V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-            </svg>
+        <main>
+            <h1>Pravimo efektivne stranice</h1>
+            <h3>Glavni cilj je unaprjeđenje korisničkog iskustva.</h3>
+            <button>Kontaktiraj</button>
         </main>
-        <article class="h-screen w-screen box-border flex">
-            <div class="h-full text-[5vw] ml-[12vw] font-bold w-1/2 flex flex-col justify-center">
-                <a href="" class="z-10 animate-pulse">Dizajn</a>
-                <a href="" class="z-10 animate-pulse">Razvoj</a>
-                <a href="" class="z-10 animate-pulse">Marketing</a>
-            </div>
-            <img class="h-screen object-contain rounded z-10 aspect-square box-border" src="design.jpeg" alt="">
-        </article>
-        <article class="h-screen w-screen box-border flex flex-col justify-center items-center overflow-hidden">
-            <h1 class="font-bold text-[9vh] mt-12">Naši Projekti</h1>
-            <hr class="bg-white z-20 border-2 w-2/3 rounded opacity-10">
-            <div>
-                <div class="h-full w-full flex flex-col justify-center items-center overflow-x-auto">
-                    <div class="flex flex-row flex-wrap justify-around w-2/3">
-                        <div class="relative w-[30vw] h-[30vh] overflow-hidden rounded-xl m-4 z-10 border border-opacity-15">
-                            <img class="absolute top-0 left-0 w-full h-full object-cover" src="preview.png" alt="Project 1">
-                            <a href="/hairsaloon.html" class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                <span class="text-white text-lg font-bold">Pregledaj</span>
-                            </a>
-                            <h2 class="absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-[0.95] text-white py-2 text-[2vh]">Frizerski Salon</h2>
-                        </div>
-                        <div class="relative w-[30vw] h-[30vh] overflow-hidden rounded-xl m-4 animate-pulse z-10 hidden">
-                            <img class="absolute top-0 left-0 w-full h-full object-cover" src="website_preview_2.jpg" alt="Project 2">
-                            <a href="#" class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                <span class="text-white text-lg font-bold">Pregledaj</span>
-                            </a>
-                            <h2 class="absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-50 text-white py-2 text-[2vh]">Firma</h2>
-                        </div>
-                        <div class="relative w-[30vw] h-[30vh] overflow-hidden rounded-xl m-4 animate-pulse z-10 hidden">
-                            <img class="absolute top-0 left-0 w-full h-full object-cover" src="website_preview_3.jpg" alt="Project 1">
-                            <a href="#" class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                <span class="text-white text-lg font-bold">Pregledaj</span>
-                            </a>
-                            <h2 class="absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-50 text-white py-2 text-[2vh]">Firma</h2>
-                        </div>
-                        <div class="relative w-[30vw] h-[30vh] overflow-hidden rounded-xl m-4 animate-pulse z-10 hidden">
-                            <img class="absolute top-0 left-0 w-full h-full object-cover" src="website_preview_4.jpg" alt="Project 2">
-                            <a href="#" class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                <span class="text-white text-lg font-bold">Pregledaj</span>
-                            </a>
-                            <h2 class="absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-50 text-white py-2 text-[2vh]">Firma</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="h-screen w-screen box-border flex justify-center items-center">
-            <div class="flex flex-col justify-center items-center w-full h-full">
-                <h2 class="text-[9vh] z-10 font-bold">Kontakt</h2>
-                <p class="text-lg z-10 mb-8">Kontaktiraj nas za bilo kakav upit ili projekt.</p>
-                <form action="#" method="POST" class="flex flex-col items-center w-full">
-                    <input type="text" name="name" placeholder="Vaše Ime" class="z-10 px-4 py-2 mb-4 rounded-md border border-gray-300 w-1/3" required>
-                    <textarea name="message" rows="5" placeholder="Vaša Poruka" class="z-10 px-4 py-2 mb-4 rounded-md border border-gray-300 w-1/3" required></textarea>
-                    <button type="submit" class="z-10 px-6 py-3 bg-black border text-white rounded-md hover:bg-gray-800 transition-colors duration-300">Pošalji</button>
-                </form>
-            </div>
-        </article>
-        <footer class="h-min w-screen flex justify-center items-center">
-            <p class="text-[2vh] mb-[2vh]">Copyright © <script>document.write(new Date().getFullYear())</script> Klada.net</p>
-        </footer>
-        <script>
-            const animatedElements = document.querySelectorAll('.scroll-animate');
-            function isInViewport(element) {
-                const rect = element.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-            function onScroll() {
-                animatedElements.forEach(element => {
-                    if (isInViewport(element)) {
-                        element.classList.add('opacity-100');
-                    }
-                    else {
-                        element.classList.add('opacity-0');
-                    }
-                });
-            }
-            window.addEventListener('scroll', onScroll);
-            const moveAroundElements = document.querySelectorAll('.move-around');
-            function moveAround() {
-                moveAroundElements.forEach(element => {
-                    const parentWidth = element.parentElement.offsetWidth;
-                    const parentHeight = element.parentElement.offsetHeight;
-                    const elementWidth = element.offsetWidth;
-                    const elementHeight = element.offsetHeight;
-                    const randomX = Math.floor(Math.random() * (parentWidth - elementWidth));
-                    const randomY = Math.floor(Math.random() * (parentHeight - elementHeight));
-                    element.style.left = `${randomX}px`;
-                    element.style.top = `${randomY}px`;
-                });
-            }
-            setInterval(moveAround, 1000);
-        </script>
+        <section>
+
+        </section>
     </body>
 </html>
