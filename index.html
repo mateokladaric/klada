@@ -12,93 +12,143 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body class="font-[Montserrat] bg-[rgb(7,8,11)] text-white">
-        <header>
-            <div>
-                <img src="" alt="">
+        <header class="container max-w-6xl mx-auto flex flex-row justify-between">
+            <div class="mt-4 flex gap-4 justify-center items-center flex-row">
+                <img class="h-6 w-6 invert" src="small.png" alt="">
                 <h1>KLADA.NET</h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Usluge</a></li>
-                    <li><a href="#">Uradci</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">O nama</a></li>
+            <nav class="mt-4">
+                <ul class="flex flex-row gap-2">
+                    <li><a class="px-4 py-2" href="#">Usluge</a></li>
+                    <li><a class="px-4 py-2" href="#">Uradci</a></li>
+                    <li><a class="px-4 py-2" href="#">Kontakt</a></li>
+                    <li><a class="px-4 py-2" href="#">O nama</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>KLADA.NET</h1>
-            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, asperiores tempore. Optio animi, iusto nulla quas quibusdam quasi unde eos quidem quae error. Reprehenderit molestiae quo dicta perferendis inventore incidunt.</h2>
-            <button>Kontaktiraj</button>
+        <main class="w-full h-max mt-4 border-2 pt-36">
+            <div class="max-w-6xl container mx-auto h-max">
+                <h1 class="text-6xl">Izrada Web Stranica</h1>
+                <h2 class="mt-8 max-w-3xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, asperiores tempore. Optio animi, iusto nulla quas quibusdam quasi unde eos quidem quae error. Reprehenderit molestiae quo dicta perferendis inventore incidunt.</h2>
+                <button class="mt-8 border-2 px-8 py-3 mb-36">Casdas</button>
+            </div>
         </main>
-        <section>
-            <h1>Usluge</h1>
-            <h2>Izrada Web Stranice</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio deserunt illo dolorem quam modi nisi tenetur id, dignissimos odio aspernatur.</h3>
-            <div>
-                <div>
-                    <h1>Web Stranica</h1>
-                    <h2>199€</h2>
-                    <ul>
-                        <li>+ Dizajn po želji</li>
-                        <li>+ Jedna lista izmjena</li>
-                        <li>+ Osnovni Hosting</li>
-                        <li>+ Domena po izboru</li>
+        <section class="container py-12 max-w-6xl mx-auto flex flex-col justify-center items-center">
+            <h1 class="text-4xl mt-4 text-center">Usluge</h1>
+            <h2 class="text-2xl mt-4 text-center">Izrada Web Stranice</h2>
+            <h3 class="text-lg mt-4 max-w-4xl text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio deserunt illo dolorem quam modi nisi tenetur id, dignissimos odio aspernatur.</h3>
+            <div class="flex w-full gap-4 justify-center mt-24">
+                <div class="w-72 border-2 grid grid-rows-[110px_350px_110px]">
+                    <div>
+                        <h1 class="text-3xl mt-4 text-center w-full">Web Stranica</h1>
+                        <h2 class="mt-7 text-5xl text-center w-full">199€</h2>
+                    </div>
+                    <ul class="mt-12 w-full flex flex-col justify-center">
+                        <li class="mt-2 text-center">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center">+ Jedna lista izmjena</li>
+                        <li class="mt-2 text-center">+ Osnovni Hosting</li>
+                        <li class="mt-2 text-center">+ Domena po izboru</li>
                     </ul>
+                    <button class="mt-12 mx-auto w-32 h-12 border-2 mb-4">Pošalji Upit</button>
                 </div>
-                <div>
-                    <h1>Web Shop</h1>
-                    <h2>399€</h2>
-                    <ul>
-                        <li>+ Dizajn po želji</li>
-                        <li>+ Pet lista izmjena</li>
-                        <li>+ Premium Hosting</li>
-                        <li>+ Domena po želji</li>
-                        <li>+ Optimizacija na Google tražilici</li>
-                        <li>+ Alati za izmjenu stranice</li>
-                        <li>+ Prodaja na stranici</li>
+                <div class="w-72 border-2 grid grid-rows-[110px_350px_110px]">
+                    <div>
+                        <h1 class="text-3xl mt-4 text-center w-full">Web Shop</h1>
+                        <h2 class="mt-7 text-5xl text-center w-full">399€</h2>
+                    </div>
+                    <ul class="mt-12 w-full flex flex-col justify-center">
+                        <li class="mt-2 text-center">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center">+ Pet lista izmjena</li>
+                        <li class="mt-2 text-center">+ Premium Hosting</li>
+                        <li class="mt-2 text-center">+ Domena po želji</li>
+                        <li class="mt-2 text-center">+ Optimizacija na Google tražilici</li>
+                        <li class="mt-2 text-center">+ Alati za izmjenu stranice</li>
+                        <li class="mt-2 text-center">+ Prodaja na stranici</li>
                     </ul>
+                    <button class="mt-12 mx-auto w-32 h-12 border-2 mb-4">Pošalji Upit</button>
                 </div>
-                <div>
-                    <h1>Poseban zahtjev</h1>
-                    <h2>?€</h2>
-                    <ul>
-                        <li>+ Dizajn po želji</li>
-                        <li>+ Neograničene izmjene</li>
-                        <li>+ Premium Hosting</li>
-                        <li>+ Domena po želji</li>
-                        <li>+ Optimizacija na Google tražilici</li>
-                        <li>+ Alati za izmjenu stranice</li>
-                        <li>+ Prodaja na stranici</li>
-                        <li>+ API integracija</li>
-                        <li>+ Posebne animacije</li>
+                <div class="w-72 border-2 grid grid-rows-[110px_350px_110px]">
+                    <div>
+                        <h1 class="text-3xl mt-4 text-center w-full">Posebno</h1>
+                        <h2 class="mt-7 text-5xl text-center w-full">?€</h2>
+                    </div>
+                    <ul class="mt-12 w-full flex flex-col justify-center">
+                        <li class="mt-2 text-center">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center">+ Neograničene izmjene</li>
+                        <li class="mt-2 text-center">+ Premium Hosting</li>
+                        <li class="mt-2 text-center">+ Domena po želji</li>
+                        <li class="mt-2 text-center">+ Optimizacija na Google tražilici</li>
+                        <li class="mt-2 text-center">+ Alati za izmjenu stranice</li>
+                        <li class="mt-2 text-center">+ Prodaja na stranici</li>
+                        <li class="mt-2 text-center">+ API integracija</li>
+                        <li class="mt-2 text-center">+ Posebne animacije</li>
                     </ul>
+                    <button class="mt-12 mx-auto w-32 h-12 border-2 mb-4">Pošalji Upit</button>
                 </div>
             </div>
         </section>
-        <section>
-            <h1>Uradci</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolore. Ipsum deleniti corrupti vero ex neque voluptate ab, quae dolores?</h2>
-            <div>
-                <div>
+        <section class="container max-w-6xl mx-auto py-12">
+            <h1 class="text-5xl w-full text-center mx-auto mt-2">Uradci</h1>
+            <h2 class="max-w-4xl text-center w-full mx-auto mt-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolore. Ipsum deleniti corrupti vero ex neque voluptate ab, quae dolores?</h2>
+            <div class="w-full mt-12 flex flex-wrap justify-center">
+                <div class="flex-grow max-w-[20%] min-w-[20%] border-2 p-2 rounded-xl">
+                    <img src="preview.png" alt="">
+                    <h1 class="w-full text-center text-2xl mt-4">Frizerski Salon</h1>
+                </div>
+            </div>
+        </section>
+        <section class="container max-w-6xl mx-auto py-12">
+            <h1 class="text-6xl w-full text-center">Kontakt</h1>
+            <h2 class="text-lg w-full text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</h2>
+            <div class="w-full flex flex-row justify-around mt-12">
+                <div class="w-[20%] aspect-square border-2 p-4 text-center flex flex-col justify-center items-center">
+                    <img class="w-full aspect-square border-2" src="" alt="">
+                    <a class="" href="#">Mail</a>
+                </div>
+                <div class="w-[20%]">
                     <img src="" alt="">
-                    <h1>Naslov</h1>
-                    <h2>Opis</h2>
+                    <a class="" href="#">Viber</a>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h1>Kontakt</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</h2>
-            <a href="#">Mail</a>
-            <a href="#">Viber</a>
-            <a href="#">Telefon</a>
-            <a href="#">Whatsapp</a>
-            <a href="#">Instagram</a>
+                <div class="w-[20%]">
+                    <img src="" alt="">
+                    <a class="" href="#">Telefon</a>
+                </div>
+                <div class="w-[20%]">
+                    <img src="" alt="">
+                    <a class="" href="#">Whatsapp</a>
+                </div>
+                <div class="w-[20%]">
+                    <img src="" alt="">
+                    <a class="" href="#">Instagram</a>
+                </div>
+            </div> 
         </section>
         <section>
             <h1>O nama</h1>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</h2>
+        </section>
+        <section>
+            <h1>Postupak</h1>
+            <div>
+                <h2>Opis dizajna ili primjer</h2>
+                <div>+</div>
+            </div>
+            <div>
+                <h2>Polovinska uplata</h2>
+                <div>+</div>
+            </div>
+            <div>
+                <h2>Izrada rada unutar 5 dana</h2>
+                <div>+</div>
+            </div>
+            <div>
+                <h2>Testiranje i izmjene</h2>
+                <div>+</div>
+            </div>
+            <div>
+                <h2>Plaćanje i objava</h2>
+                <div>+</div>
+            </div>
         </section>
         <footer>
             <h1>&copy; 2024 | KLADA.NET | Sva prava pridržana</h1>
