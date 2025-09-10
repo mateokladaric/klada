@@ -1,390 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Kladarić - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.4;
-            color: #333;
-            background: #fff;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0.5in;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 1.5em;
-            border-bottom: 2px solid #2c5aa0;
-            padding-bottom: 1em;
-        }
-        
-        .header h1 {
-            font-size: 2.2em;
-            color: #2c5aa0;
-            margin-bottom: 0.2em;
-            font-weight: 700;
-        }
-        
-        .header .subtitle {
-            font-size: 1.1em;
-            color: #666;
-            font-weight: 500;
-            margin-bottom: 0.5em;
-        }
-        
-        .contact-info {
-            font-size: 0.95em;
-            color: #555;
-            line-height: 1.3;
-        }
-        
-        .section {
-            margin-bottom: 1.5em;
-        }
-        
-        .section-title {
-            font-size: 1.3em;
-            color: #2c5aa0;
-            font-weight: 700;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.3em;
-            margin-bottom: 0.8em;
-        }
-        
-        .summary {
-            text-align: justify;
-            font-size: 1em;
-            line-height: 1.5;
-            margin-bottom: 1em;
-        }
-        
-        .job {
-            margin-bottom: 1.2em;
-        }
-        
-        .job-header {
-            margin-bottom: 0.5em;
-        }
-        
-        .job-title {
-            font-size: 1.1em;
-            font-weight: 700;
-            color: #2c5aa0;
-        }
-        
-        .company-info {
-            font-size: 0.95em;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 0.4em;
-        }
-        
-        .job-content ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .job-content li {
-            margin-bottom: 0.4em;
-            padding-left: 1em;
-            position: relative;
-            text-align: justify;
-        }
-        
-        .job-content li::before {
-            content: "•";
-            color: #2c5aa0;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1em;
-            margin-bottom: 1em;
-        }
-        
-        .skill-category {
-            margin-bottom: 0.8em;
-        }
-        
-        .skill-category h4 {
-            color: #2c5aa0;
-            font-weight: 600;
-            margin-bottom: 0.3em;
-            font-size: 1em;
-        }
-        
-        .skill-category ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .skill-category li {
-            margin-bottom: 0.2em;
-            padding-left: 1em;
-            position: relative;
-            font-size: 0.9em;
-        }
-        
-        .skill-category li::before {
-            content: "▪";
-            color: #2c5aa0;
-            position: absolute;
-            left: 0;
-        }
-        
-        .highlight-box {
-            background: #f8f9fa;
-            border-left: 4px solid #2c5aa0;
-            padding: 0.8em;
-            margin: 1em 0;
-            font-style: italic;
-        }
-        
-        .languages, .education {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2em;
-
-}
-        
-        .why-excel {
-            background: #f0f4f8;
-            padding: 1em;
-            border-radius: 8px;
-            margin-top: 1em;
-        }
-        
-        .why-excel ul {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.5em;
-        }
-        
-        .why-excel li {
-            font-size: 0.9em;
-            padding-left: 1.2em;
-            position: relative;
-        }
-        
-        .why-excel li::before {
-            content: "✓";
-            color: #28a745;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 2em;
-            padding-top: 1em;
-            border-top: 1px solid #ddd;
-            font-style: italic;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        @media print {
-            body {
-                padding: 0.3in;
-                font-size: 11pt;
-            }
-            .header h1 {
-                font-size: 1.8em;
-            }
-            .section-title {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kladarić - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 1.5em;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 1em;
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            color: #2c5aa0;
+            margin-bottom: 0.2em;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+        }
+        
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .section {
+            margin-bottom: 1.5em;
+        }
+        
+        .section-title {
+            font-size: 1.3em;
+            color: #2c5aa0;
+            font-weight: 700;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3em;
+            margin-bottom: 0.8em;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+        
+        .job {
+            margin-bottom: 1.2em;
+        }
+        
+        .job-header {
+            margin-bottom: 0.5em;
+        }
+        
+        .job-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c5aa0;
+        }
+        
+        .company-info {
+            font-size: 0.95em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.4em;
+        }
+        
+        .job-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-content li {
+            margin-bottom: 0.4em;
+            padding-left: 1em;
+            position: relative;
+            text-align: justify;
+        }
+        
+        .job-content li::before {
+            content: "•";
+            color: #2c5aa0;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            margin-bottom: 1em;
+        }
+        
+        .skill-category {
+            margin-bottom: 0.8em;
+        }
+        
+        .skill-category h4 {
+            color: #2c5aa0;
+            font-weight: 600;
+            margin-bottom: 0.3em;
+            font-size: 1em;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skill-category li {
+            margin-bottom: 0.2em;
+            padding-left: 1em;
+            position: relative;
+            font-size: 0.9em;
+        }
+        
+        .skill-category li::before {
+            content: "▪";
+            color: #2c5aa0;
+            position: absolute;
+            left: 0;
+        }
+        
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #2c5aa0;
+            padding: 0.8em;
+            margin: 1em 0;
+            font-style: italic;
+        }
+        
+        .languages, .education {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+        }
+        
+        .why-excel {
+            background: #f0f4f8;
+            padding: 1em;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+        
+        .why-excel ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5em;
+        }
+        
+        .why-excel li {
+            font-size: 0.9em;
+            padding-left: 1.2em;
+            position: relative;
+        }
+        
+        .why-excel li::before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2em;
+            padding-top: 1em;
+            border-top: 1px solid #ddd;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                padding: 0.3in;
+                font-size: 11pt;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .section-title {
+                font-size: 1.1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Mario Kladarić</h1>
-        <div class="subtitle">Technical Project Manager & Software Developer</div>
-        <div class="contact-info">
-            📧 mario.kladarich@gmail.com<br>
-            📱 +385977699195<br>
-            📍 Slavonski Brod, Croatia | 🗓️ Born: September 5, 1998 | 🏳️ Croatian Citizen
-        </div>
-    </div>
+    <div class="header">
+        <h1>Mario Kladarić</h1>
+        <div class="subtitle">Technical Project Manager & Software Developer</div>
+        <div class="contact-info">
+            📧 mario.kladarich@gmail.com<br>
+            📱 +385977699195<br>
+            📍 Slavonski Brod, Croatia | 🗓️ Born: September 5, 1998 | 🏳️ Croatian Citizen
+        </div>
+    </div>
 
-    <div class="section">
-        <h2 class="section-title">Professional Summary</h2>
-        <div class="summary">
-            Results-driven technical professional with <strong>5.5 years of experience</strong> in project management, software development, and automation solutions. Proven track record of delivering complex projects from conception to completion, managing budgets exceeding €10,000, and leading cross-functional teams. Expert in creating sophisticated configurators with 500+ variables, developing automation algorithms that improved efficiency by over 10,000%, and working seamlessly with international stakeholders in high-pressure environments.
-        </div>
-        <div class="highlight-box">
-            <strong>Core Strengths:</strong> Remote work expertise, real-time problem solving, technical documentation, cross-cultural communication, and rapid adaptation to new technologies.
-        </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Programming & Development</h4>
-                <ul>
-                    <li><strong>Languages:</strong> C#, Excel in-sheet programming, SQL (learning), AutoCAD scripting</li>
-                    <li><strong>3D Modeling & CAD:</strong> SolidWorks, AutoCAD, Inventor, Fusion 360, Blender</li>
-                    <li><strong>Game Development:</strong> Unity (created Belote card game), Blender game development</li>
-                    <li><strong>Data Management:</strong> Advanced Excel, complex algorithm development, database optimization</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h4>Project Management & Automation</h4>
-                <ul>
-                    <li><strong>Software:</strong> Partsolutions, CRM systems, Microsoft Office Suite</li>
-                    <li><strong>Specializations:</strong> Process automation, workflow optimization, technical documentation</li>
-                    <li><strong>Project Scale:</strong> 1 week to 12+ months duration, €10,000+ budgets</li>
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="summary">
+            Results-driven technical professional with <strong>5.5 years of experience</strong> in project management, software development, and automation solutions. Proven track record of delivering complex projects from conception to completion, managing budgets exceeding €10,000, and leading cross-functional teams. Expert in creating sophisticated configurators with 500+ variables, developing automation algorithms that improved efficiency by over 10,000%, and working seamlessly with international stakeholders in high-pressure environments.
+        </div>
+        <div class="highlight-box">
+            <strong>Core Strengths:</strong> Remote work expertise, real-time problem solving, technical documentation, cross-cultural communication, and rapid adaptation to new technologies.
+        </div>
+    </div>
 
-</ul>
-            </div>
-        </div>
-        <div class="skill-category">
-            <h4>Technical Systems</h4>
-            <ul>
-                <li><strong>Industrial:</strong> CNC programming (Vitap K2 2.0), electrical installations for Siemens systems</li>
-                <li><strong>3D Visualization:</strong> Client presentations, marketing material creation, web integration (3D Findit)</li>
-                <li><strong>Quality Assurance:</strong> Software testing, performance optimization, system validation</li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Professional Experience</h2>
-        
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">Senior Project Assistant & Technical Lead</div>
-                <div class="company-info">Cadenas d.o.o. | July 2017 – January 2023 | Slavonski Brod, Croatia</div>
-            </div>
-            <div class="job-content">
-                <ul>
-                    <li><strong>Project Leadership:</strong> Managed complex technical projects from initial concept to final delivery, working directly with German project managers and international clients</li>
-                    <li><strong>Software Development:</strong> Created sophisticated configurators with 500+ interconnected variables using Partsolutions and Excel programming</li>
-                    <li><strong>Process Innovation:</strong> Developed universal modeling structures reducing project completion time from 2 weeks to 2 hours (10,000%+ efficiency improvement)</li>
-                    <li><strong>Team Management:</strong> Led and coordinated work for teams of 1-5 colleagues, organizing priorities and integrating deliverables</li>
-                    <li><strong>Technical Delivery:</strong> Produced precise 3D models with accurate technical specifications for integration into SolidWorks, NX Siemens, AutoCAD, and web platforms</li>
-                    <li><strong>Client Relations:</strong> Maintained daily communication with stakeholders, managing requirements, milestones, and urgent "yesterday" deadlines</li>
-                    <li><strong>Remote Work:</strong> Successfully operated remotely for 2 years, maintaining high productivity and communication standards</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Key Achievement:</strong> Automated repetitive modeling processes, creating reusable frameworks that became standard across 90% of projects
-                </div>
-            </div>
-        </div>
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming & Development</h4>
+                <ul>
+                    <li><strong>Languages:</strong> C#, Excel in-sheet programming, SQL (learning), AutoCAD scripting</li>
+                    <li><strong>3D Modeling & CAD:</strong> SolidWorks, AutoCAD, Inventor, Fusion 360, Blender</li>
+                    <li><strong>Game Development:</strong> Unity (created Belote card game), Blender game development</li>
+                    <li><strong>Data Management:</strong> Advanced Excel, complex algorithm development, database optimization</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Project Management & Automation</h4>
+                <ul>
+                    <li><strong>Software:</strong> Partsolutions, CRM systems, Microsoft Office Suite</li>
+                    <li><strong>Specializations:</strong> Process automation, workflow optimization, technical documentation</li>
+                    <li><strong>Project Scale:</strong> 1 week to 12+ months duration, €10,000+ budgets</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h4>Technical Systems</h4>
+            <ul>
+                <li><strong>Industrial:</strong> CNC programming (Vitap K2 2.0), electrical installations for Siemens systems</li>
+                <li><strong>3D Visualization:</strong> Client presentations, marketing material creation, web integration (3D Findit)</li>
+                <li><strong>Quality Assurance:</strong> Software testing, performance optimization, system validation</li>
+            </ul>
+        </div>
+    </div>
 
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">CNC Operator & Production Specialist</div>
-                <div class="company-info">FORMO d.o.o. | January 2023 – April 2025 | Slavonski Brod, Croatia</div>
-            </div>
-            <div class="job-content">
-                <ul>
-                    <li><strong>Machine Programming:</strong> Operated and programmed Italian CNC machine (Vitap K2 2.0) for precision manufacturing</li>
-                    <li><strong>Client Management:</strong> Handled direct client communication for custom furniture projects, managing expectations and technical requirements</li>
-                    <li><strong>3D Visualization:</strong> Created marketing-ready 3D models and visualizations for client presentations</li>
-                    <li><strong>Supply Chain:</strong> Coordinated material procurement and assembly processes for wooden furniture production</li>
-                    <li><strong>Problem Solving:</strong> Resolved technical issues in real-time production environment</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="job">
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Senior Project Assistant & Technical Lead</div>
+                <div class="company-info">Cadenas d.o.o. | July 2017 – January 2023 | Slavonski Brod, Croatia</div>
+            </div>
+            <div class="job-content">
+                <ul>
+                    <li><strong>Project Leadership:</strong> Managed complex technical projects from initial concept to final delivery, working directly with German project managers and international clients</li>
+                    <li><strong>Software Development:</strong> Created sophisticated configurators with 500+ interconnected variables using Partsolutions and Excel programming</li>
+                    <li><strong>Process Innovation:</strong> Developed universal modeling structures and created Excel automation sheets that reduced project completion time from 2 weeks to 2 hours (10,000%+ efficiency improvement)</li>
+                    <li><strong>Team Management:</strong> Led and coordinated work for teams of 1-5 colleagues, organizing priorities and integrating deliverables</li>
+                    <li><strong>Technical Delivery:</strong> Produced precise 3D models with accurate technical specifications for integration into SolidWorks, NX Siemens, AutoCAD, and web platforms</li>
+                    <li><strong>Client Relations:</strong> Maintained daily communication with stakeholders, managing requirements, milestones, and urgent "yesterday" deadlines</li>
+                    <li><strong>Remote Work:</strong> Successfully operated remotely for 2 years, maintaining high productivity and communication standards</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Key Achievement:</strong> Created Excel automation sheets that eliminated 2 weeks of manual work, with modeling structure improvements becoming standard across 90% of projects
+                </div>
+            </div>
+        </div>
 
-<div class="job-header">
-                <div class="job-title">Electrical Technician</div>
-                <div class="company-info">EMTS Connections | April 2025 – Present | Chemnitz, Germany (Remote Work)</div>
-            </div>
-            <div class="job-content">
-                <ul>
-                    <li><strong>Industrial Systems:</strong> Specializing in cable installation and management for Siemens industrial equipment (Trains, CLC, CLS, CNC machines)</li>
-                    <li><strong>System Integration:</strong> Working with complex electrical closets and industrial automation systems</li>
-                    <li><strong>Quality Control:</strong> Ensuring installations meet strict technical specifications and safety standards</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Project Portfolio Highlights</h2>
-        <div class="skill-category">
-            <h4>Complex Configurator Development</h4>
-            <ul>
-                <li>Built multi-variable systems with 500+ interconnected parameters</li>
-                <li>Integrated with web platforms and marketing systems</li>
-                <li>Delivered projects ranging from €10,000 to €100,000+ budgets</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h4>Automation Solutions</h4>
-            <ul>
-                <li>Developed Excel-based algorithms reducing manual work by 99%</li>
-                <li>Created reusable templates adopted across entire organization</li>
-                <li>Implemented testing protocols for new software releases</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h4>Game Development</h4>
-            <ul>
-                <li><strong>Belote Card Game (Unity):</strong> Complete game development including logic, UI, and player interactions</li>
-                <li><strong>3D Game Assets (Blender):</strong> Created models and environments for gaming applications</li>
-            </ul>
-        </div>
-    </div>
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">CNC Operator & Production Specialist</div>
+                <div class="company-info">FORMO d.o.o. | January 2023 – April 2025 | Slavonski Brod, Croatia</div>
+            </div>
+            <div class="job-content">
+                <ul>
+                    <li><strong>Machine Programming:</strong> Operated and programmed Italian CNC machine (Vitap K2 2.0) for precision manufacturing</li>
+                    <li><strong>Client Management:</strong> Handled direct client communication for custom furniture projects, managing expectations and technical requirements</li>
+                    <li><strong>3D Visualization:</strong> Created marketing-ready 3D models and visualizations for client presentations</li>
+                    <li><strong>Supply Chain:</strong> Coordinated material procurement and assembly processes for wooden furniture production</li>
+                    <li><strong>Problem Solving:</strong> Resolved technical issues in real-time production environment</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="section">
-        <div class="languages">
-            <div>
-                <h2 class="section-title">Languages</h2>
-                <ul style="list-style: none; padding: 0;">
-                    <li><strong>Croatian:</strong> Native</li>
-                    <li><strong>English:</strong> Fluent (Business Level)</li>
-                    <li><strong>German:</strong> Conversational</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="section-title">Education & Certifications</h2>
-                <p><strong>Electrical Engineering Background</strong><br>
-                Technical expertise in electrical systems and automation</p>
-                <p><strong>Continuous Learning:</strong> Currently expanding SQL knowledge and exploring advanced gaming technologies</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Why I Excel in iGaming & IT</h2>
-        <div class="why-excel">
-            <ul>
-                <li><strong>High-Pressure Performance:</strong> Thrived in "diamond-making pressure" environments with tight deadlines</li>
-                <li><strong>Remote Work Mastery:</strong> 2+ years successful remote collaboration with international teams</li>
-                <li><strong>Real-Time Problem Solving:</strong> Experience managing multiple urgent priorities simultaneously</li>
-                <li><strong>Technical Versatility:</strong> Rapid learning and adaptation to new software and systems</li>
-                <li><strong>Client Communication:</strong> Proven ability to translate technical concepts for diverse stakeholders</li>
-                <li><strong>Automation Mindset:</strong> Consistently identify and implement efficiency improvements</li>
-            </ul>
-        </div>
-    </div>
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Electrical Technician</div>
+                <div class="company-info">EMTS Connections | April 2025 – Present | Chemnitz, Germany (Remote Work)</div>
+            </div>
+            <div class="job-content">
+                <ul>
+                    <li><strong>Industrial Systems:</strong> Specializing in cable installation and management for Siemens industrial equipment (Trains, CLC, CLS, CNC machines)</li>
+                    <li><strong>System Integration:</strong> Working with complex electrical closets and industrial automation systems</li>
+                    <li><strong>Quality Control:</strong> Ensuring installations meet strict technical specifications and safety standards</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<div class="footer">
-        Available for immediate remote work opportunities in live trading, software development, or technical project management roles within the iGaming industry.
-    </div>
+
+    <div class="section">
+        <h2 class="section-title">Project Portfolio Highlights</h2>
+        <div class="skill-category">
+            <h4>Complex Configurator Development</h4>
+            <ul>
+                <li>Built multi-variable systems with 500+ interconnected parameters</li>
+                <li>Integrated with web platforms and marketing systems</li>
+                <li>Delivered projects ranging from €10,000 to €100,000+ budgets</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>Automation Solutions</h4>
+            <ul>
+                <li>Developed Excel-based algorithms reducing manual work by 99%</li>
+                <li>Created reusable templates adopted across entire organization</li>
+                <li>Implemented testing protocols for new software releases</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>Game Development</h4>
+            <ul>
+                <li><strong>Belote Card Game (Unity):</strong> Complete game development including logic, UI, and player interactions</li>
+                <li><strong>3D Game Assets (Blender):</strong> Created models and environments for gaming applications</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="languages">
+            <div>
+                <h2 class="section-title">Languages</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Croatian:</strong> Native</li>
+                    <li><strong>English:</strong> Fluent (Business Level)</li>
+                    <li><strong>German:</strong> Conversational</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="section-title">Education & Certifications</h2>
+                <p><strong>Electrical Engineering Background</strong><br>
+                Technical expertise in electrical systems and automation</p>
+                <p><strong>Continuous Learning:</strong> Currently expanding SQL knowledge and exploring advanced gaming technologies</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2 class="section-title">Why I Excel in iGaming & IT</h2>
+        <div class="why-excel">
+            <ul>
+                <li><strong>High-Pressure Performance:</strong> Thrived in "diamond-making pressure" environments with tight deadlines</li>
+                <li><strong>Remote Work Mastery:</strong> 2+ years successful remote collaboration with international teams</li>
+                <li><strong>Real-Time Problem Solving:</strong> Experience managing multiple urgent priorities simultaneously</li>
+                <li><strong>Technical Versatility:</strong> Rapid learning and adaptation to new software and systems</li>
+                <li><strong>Client Communication:</strong> Proven ability to translate technical concepts for diverse stakeholders</li>
+                <li><strong>Automation Mindset:</strong> Consistently identify and implement efficiency improvements</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        Available for immediate remote work opportunities in live trading, software development, or technical project management roles within the iGaming industry.
+    </div>
 </body>
 </html>
