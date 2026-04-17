@@ -15,36 +15,39 @@
         rel="stylesheet">
 </head>
 
-<body class="font-[Montserrat] bg-[rgb(7,8,11)] text-white">
+<body class="font-[Montserrat] bg-[rgb(7_8_11)] text-white">
     <header class="container max-w-6xl mx-auto flex flex-row justify-between items-center">
         <div class="mt-4 flex gap-4 justify-center items-center flex-row">
             <img class="h-8 object-contain" src="small.png" alt="">
             <h1 class="font-bold text-xl hover:text-green-400">KLADA.NET</h1>
         </div>
-        <nav class="mt-4 lg:block hidden">
+        <nav class="mt-4 lg:flex hidden items-center gap-2">
             <ul class="flex flex-row gap-2 justify-center items-center">
                 <li><a class="px-4 py-2 font-bold hover:border-b-2 border-green-400 hover:text-green-400 text-xl"
-                        href="#mi">O nama</a></li>
+                        href="#mi" data-i18n="nav.about">O nama</a></li>
                 <li><a class="px-4 py-2 font-bold hover:border-b-2 border-green-400 hover:text-green-400 text-xl"
-                        href="#usluge">Usluge</a></li>
+                        href="#usluge" data-i18n="nav.services">Usluge</a></li>
                 <li><a class="px-4 py-2 font-bold hover:border-b-2 border-green-400 hover:text-green-400 text-xl"
-                        href="#proces">Postupak</a></li>
+                        href="#primjeri" data-i18n="nav.examples">Primjeri</a></li>
                 <li><a class="px-4 py-2 font-bold hover:border-b-2 border-green-400 hover:text-green-400 text-xl"
-                        href="mailto:mateo@klada.net">Kontakt</a></li>
+                        href="#proces" data-i18n="nav.process">Postupak</a></li>
+                <li><a class="px-4 py-2 font-bold hover:border-b-2 border-green-400 hover:text-green-400 text-xl"
+                        href="mailto:mateo@klada.net" data-i18n="nav.contact">Kontakt</a></li>
             </ul>
+            <button id="lang-toggle" onclick="toggleLanguage()" class="ml-2 px-3 py-1 border-2 border-green-500 text-green-400 font-bold rounded hover:bg-green-500 hover:text-white transition">EN</button>
         </nav>
     </header>
     <main id="main" class="w-full h-max mt-4 pt-52 relative overflow-hidden">
         <div class="max-w-6xl container mx-auto h-max">
-            <h1 class="text-7xl mb-52 font-bold text-center max-w-2xl mx-auto tracking-tight leading-[68px]">Uvodimo
-                vašu Tvrtku u <span
-                    class="bg-gradient-to-b from-green-300 to bg-green-600 bg-clip-text text-transparent z-10">Digitalni
+            <h1 class="text-7xl mb-52 font-bold text-center max-w-2xl mx-auto tracking-tight leading-[68px]"><span data-i18n="hero.title">Uvodimo
+                vašu Tvrtku u</span> <span
+                    class="bg-gradient-to-b from-green-300 to-green-600 bg-clip-text text-transparent z-10" data-i18n="hero.highlight">Digitalni
                     Svijet</span></h1>
         </div>
     </main>
     <section id="mi" class="container max-w-6xl mx-auto py-12">
-        <h1 class="text-6xl text-center w-full font-bold text-green-500">O nama</h1>
-        <h2 class="mt-6 max-w-4xl mx-auto text-lg mb-12 text-gray-300">
+        <h1 class="text-6xl text-center w-full font-bold text-green-500" data-i18n="about.title">O nama</h1>
+        <h2 class="mt-6 max-w-4xl mx-auto text-lg mb-12 text-gray-300" data-i18n="about.desc">
             Profesionalno pravimo web stranice i web shop-ove. Naš tim se sastoji od stručnjaka koji će vašu firmu
             uvesti u digitalni svijet interneta. Dizajniramo stranice po vašoj želji i prilagođavamo ih vašim potrebama.
             Sve stranice su ručno izrađene što nam omogućava svaki detalj prilagoditi vašim potrebama, te maksimalno
@@ -52,7 +55,7 @@
         </h2>
         <div class="container max-w-5xl mx-auto flex lg:flex-row flex-col justify-around">
             <div class="h-56 aspect-square relative flex flex-col justify-center items-center text-[22px]">
-                <h2 class="text-center font-bold text-xl">Brzina</h2>
+                <h2 class="text-center font-bold text-xl" data-i18n="about.speed">Brzina</h2>
                 <h3 class="text-5xl text-green-600 font-bold countup mt-4">100</h3>
                 <svg class="w-full h-full absolute">
                     <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="100"
@@ -65,7 +68,7 @@
                 </svg>
             </div>
             <div class="h-56 aspect-square relative flex flex-col justify-center items-center text-[22px]">
-                <h2 class="text-center font-bold text-xl">Jedinstvenost</h2>
+                <h2 class="text-center font-bold text-xl" data-i18n="about.uniqueness">Jedinstvenost</h2>
                 <h3 class="text-5xl text-green-600 font-bold countup mt-4">100</h3>
                 <svg class="w-full h-full absolute">
                     <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="100"
@@ -77,7 +80,7 @@
                 </svg>
             </div>
             <div class="h-56 aspect-square relative flex flex-col justify-center items-center text-[22px]">
-                <h2 class="text-center font-bold text-xl">Izmjenivost</h2>
+                <h2 class="text-center font-bold text-xl" data-i18n="about.flexibility">Izmjenivost</h2>
                 <h3 class="text-5xl text-green-600 font-bold countup mt-4">100</h3>
                 <svg class="w-full h-full absolute">
                     <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="100"
@@ -91,93 +94,106 @@
         </div>
     </section>
     <section id="usluge" class="container py-12 max-w-6xl mx-auto flex flex-col justify-center items-center">
-        <h1 class="text-6xl mt-4 text-center font-bold text-green-500">Usluge</h1>
-        <h2 class="text-4xl mt-10 text-center">Izrada Web Stranice</h2>
-        <h3 class="text-xl mt-6 max-w-4xl text-gray-300">Ako niste sigurni koji paket najbolje odgovara vašim potrebama
-            ili imate posebne zahtjeve, nudimo "Posebni" paket po potrebi.<br>
+        <h1 class="text-6xl mt-4 text-center font-bold text-green-500" data-i18n="services.title">Usluge</h1>
+        <h2 class="text-4xl mt-10 text-center" data-i18n="services.subtitle">Izrada Web Stranice</h2>
+        <h3 class="text-xl mt-6 max-w-4xl text-gray-300"><span data-i18n="services.desc">Ako niste sigurni koji paket najbolje odgovara vašim potrebama
+            ili imate posebne zahtjeve, nudimo "Posebni" paket po potrebi.</span><br>
             <div class="flex w-full gap-4 justify-center items-center mt-24 lg:flex-row flex-col">
                 <div class="w-72 border-4 border-green-500 grid grid-rows-[110px_350px_110px]">
                     <div>
-                        <h1 class="text-3xl mt-4 text-center w-full font-semibold">Web Stranica</h1>
+                        <h1 class="text-3xl mt-4 text-center w-full font-semibold" data-i18n="services.website">Web Stranica</h1>
                         <h2 class="mt-7 text-5xl text-center w-full font-bold"><span
                                 class="text-green-500">699</span><span class="text-lg">€</span></h2>
                     </div>
                     <ul class="mt-12 w-full flex flex-col justify-center">
-                        <li class="mt-2 text-center">+ Dizajn po želji</li>
-                        <li class="mt-2 text-center">+ Jedna lista izmjena</li>
-                        <li class="mt-2 text-center">+ Osnovni Hosting</li>
-                        <li class="mt-2 text-center">+ Domena po izboru</li>
+                        <li class="mt-2 text-center" data-i18n="services.designCustom">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center" data-i18n="services.oneRevision">+ Jedna lista izmjena</li>
+                        <li class="mt-2 text-center" data-i18n="services.basicHosting">+ Osnovni Hosting</li>
+                        <li class="mt-2 text-center" data-i18n="services.domainChoice">+ Domena po izboru</li>
                     </ul>
                     <a href="mailto:mateo@klada.net"
-                        class="mt-12 mx-auto w-32 h-12 border-2 mb-4 border-green-500 flex justify-center items-center">Pošalji
+                        class="mt-12 mx-auto px-6 h-12 border-2 mb-4 border-green-500 flex justify-center items-center" data-i18n="services.sendInquiry">Pošalji
                         Upit</a>
                 </div>
                 <div class="w-72 border-4 border-green-500 grid grid-rows-[110px_350px_110px]">
                     <div>
-                        <h1 class="text-3xl mt-4 text-center w-full font-semibold">Web Shop</h1>
+                        <h1 class="text-3xl mt-4 text-center w-full font-semibold" data-i18n="services.webshop">Web Shop</h1>
                         <h2 class="mt-7 text-5xl text-center w-full font-bold"><span
                                 class="text-green-500">999</span><span class="text-lg">€</span></h2>
                     </div>
                     <ul class="mt-12 w-full flex flex-col justify-center">
-                        <li class="mt-2 text-center">+ Dizajn po želji</li>
-                        <li class="mt-2 text-center">+ Pet lista izmjena</li>
-                        <li class="mt-2 text-center">+ Premium Hosting</li>
-                        <li class="mt-2 text-center">+ Domena po želji</li>
-                        <li class="mt-2 text-center">+ Optimizacija na Google tražilici</li>
-                        <li class="mt-2 text-center">+ Alati za izmjenu stranice</li>
-                        <li class="mt-2 text-center">+ Prodaja na stranici</li>
+                        <li class="mt-2 text-center" data-i18n="services.designCustom">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center" data-i18n="services.fiveRevisions">+ Pet lista izmjena</li>
+                        <li class="mt-2 text-center" data-i18n="services.premiumHosting">+ Premium Hosting</li>
+                        <li class="mt-2 text-center" data-i18n="services.domainCustom">+ Domena po želji</li>
+                        <li class="mt-2 text-center" data-i18n="services.seo">+ Optimizacija na Google tražilici</li>
+                        <li class="mt-2 text-center" data-i18n="services.editTools">+ Alati za izmjenu stranice</li>
+                        <li class="mt-2 text-center" data-i18n="services.selling">+ Prodaja na stranici</li>
                     </ul>
                     <a href="mailto:mateo@klada.net"
-                        class="mt-12 mx-auto w-32 h-12 border-2 mb-4 border-green-500 flex justify-center items-center">Pošalji
+                        class="mt-12 mx-auto px-6 h-12 border-2 mb-4 border-green-500 flex justify-center items-center" data-i18n="services.sendInquiry">Pošalji
                         Upit</a>
                 </div>
 
                 <div class="w-72 border-4 border-green-500 grid grid-rows-[110px_350px_110px]">
                     <div>
-                        <h1 class="text-3xl mt-4 text-center w-full font-semibold">Posebno</h1>
+                        <h1 class="text-3xl mt-4 text-center w-full font-semibold" data-i18n="services.custom">Posebno</h1>
                         <h2 class="mt-7 text-5xl text-center w-full font-bold"><span
                                 class="text-green-500">?</span><span class="text-lg">€</span></h2>
                     </div>
                     <ul class="mt-12 w-full flex flex-col justify-center">
-                        <li class="mt-2 text-center">+ Dizajn po želji</li>
-                        <li class="mt-2 text-center">+ Neograničene izmjene</li>
-                        <li class="mt-2 text-center">+ Premium Hosting</li>
-                        <li class="mt-2 text-center">+ Domena po želji</li>
-                        <li class="mt-2 text-center">+ Optimizacija na Google tražilici</li>
-                        <li class="mt-2 text-center">+ Alati za izmjenu stranice</li>
-                        <li class="mt-2 text-center">+ Prodaja na stranici</li>
-                        <li class="mt-2 text-center">+ API integracija</li>
-                        <li class="mt-2 text-center">+ Posebne animacije</li>
+                        <li class="mt-2 text-center" data-i18n="services.designCustom">+ Dizajn po želji</li>
+                        <li class="mt-2 text-center" data-i18n="services.unlimitedRevisions">+ Neograničene izmjene</li>
+                        <li class="mt-2 text-center" data-i18n="services.premiumHosting">+ Premium Hosting</li>
+                        <li class="mt-2 text-center" data-i18n="services.domainCustom">+ Domena po želji</li>
+                        <li class="mt-2 text-center" data-i18n="services.seo">+ Optimizacija na Google tražilici</li>
+                        <li class="mt-2 text-center" data-i18n="services.editTools">+ Alati za izmjenu stranice</li>
+                        <li class="mt-2 text-center" data-i18n="services.selling">+ Prodaja na stranici</li>
+                        <li class="mt-2 text-center" data-i18n="services.api">+ API integracija</li>
+                        <li class="mt-2 text-center" data-i18n="services.animations">+ Posebne animacije</li>
                     </ul>
                     <a href="mailto:mateo@klada.net"
-                        class="mt-12 mx-auto w-32 h-12 border-2 mb-4 border-green-500 flex justify-center items-center">Pošalji
+                        class="mt-12 mx-auto px-6 h-12 border-2 mb-4 border-green-500 flex justify-center items-center" data-i18n="services.sendInquiry">Pošalji
                         Upit</a>
                 </div>
             </div>
     </section>
+    <section id="primjeri" class="container max-w-6xl mx-auto py-12 flex flex-col items-center">
+        <h1 class="text-6xl text-center w-full font-bold text-green-500" data-i18n="examples.title">Primjeri</h1>
+        <div class="w-full mt-12 flex flex-wrap justify-center gap-8">
+            <a href="https://replymate.online" target="_blank" rel="noopener noreferrer"
+                class="group relative w-[520px] h-[310px] rounded-xl border-2 border-green-500 overflow-hidden block">
+                <img src="replymate.jpg" alt="Replymate preview" class="w-full h-full object-cover blur-sm">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center transition group-hover:bg-black/30">
+                    <span class="text-3xl font-bold text-white drop-shadow-lg">Replymate</span>
+                </div>
+            </a>
+        </div>
+    </section>
     <section id="proces" class="container max-w-4xl mx-auto py-12 flex flex-col items-center">
-        <h1 class="text-6xl text-center w-full font-bold text-green-500">Postupak</h1>
-        <h3 class="text-2xl mt-6 text-gray-300">Postupak kojim poslujemo i naša očekivanja te prosječna trajanja svakog
+        <h1 class="text-6xl text-center w-full font-bold text-green-500" data-i18n="process.title">Postupak</h1>
+        <h3 class="text-2xl mt-6 text-gray-300" data-i18n="process.desc">Postupak kojim poslujemo i naša očekivanja te prosječna trajanja svakog
             dijela.</h3>
         <div class="w-full grid grid-cols-[2fr_10fr] gap-8 mx-auto mt-12 text-3xl">
-            <h1 class="text-green-600">Dan 1.</h1>
-            <h1>Dogovor sastanka</h1>
-            <h1 class="text-green-600">Dan 2.</h1>
-            <h1>Sastanak i odabir paketa prema vašim potrebama</h1>
-            <h1 class="text-green-600">Dan 3.</h1>
-            <h1>Predstavljamo prvi primjerak</h1>
-            <h1 class="text-green-600">Dan 4.</h1>
-            <h1>Dajete nam listu željenih promjeni</h1>
-            <h1 class="text-green-600">Dan 5.</h1>
-            <h1>Predstavljamo konačnu verziju</h1>
-            <h1 class="text-green-600">Dan 6.</h1>
-            <h1>Uz vaše odobrenje objavljujemo vašu stranicu</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 1.</h1>
+            <h1 data-i18n="process.step1">Dogovor sastanka</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 2.</h1>
+            <h1 data-i18n="process.step2">Sastanak i odabir paketa prema vašim potrebama</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 3.</h1>
+            <h1 data-i18n="process.step3">Predstavljamo prvi primjerak</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 4.</h1>
+            <h1 data-i18n="process.step4">Dajete nam listu željenih promjeni</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 5.</h1>
+            <h1 data-i18n="process.step5">Predstavljamo konačnu verziju</h1>
+            <h1 class="text-green-600"><span data-i18n="process.day">Dan</span> 6.</h1>
+            <h1 data-i18n="process.step6">Uz vaše odobrenje objavljujemo vašu stranicu</h1>
         </div>
     </section>
     <footer class="w-full text-center py-2 border-t-2 border-green-500">
-        <h1 class="text-xl text-green-700">&copy; 2025 | KLADA.NET | Sva prava pridržana</h1>
+        <h1 class="text-xl text-green-700">&copy; 2025 | KLADA.NET | <span data-i18n="footer.rights">Sva prava pridržana</span></h1>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="counter.js"></script>
 </body>
 

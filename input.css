@@ -1,0 +1,13 @@
+@import "C:/Users/admin/AppData/Roaming/npm/node_modules/@tailwindcss/cli/node_modules/tailwindcss";
+
+@source "./*.html";
+@source "./*.js";
+
+@layer base {
+  main {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+}
